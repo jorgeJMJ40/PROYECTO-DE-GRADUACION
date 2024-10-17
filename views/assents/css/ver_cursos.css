@@ -1,0 +1,131 @@
+/* ------------------------------ Global Reset ------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ------------------------------ Body Styling ------------------------------ */
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ------------------------------ Container ------------------------------ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------ Title ------------------------------ */
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------ Table Styling ------------------------------ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Table Header */
+thead {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+th {
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Table Body */
+tbody {
+    background-color: #fff;
+}
+
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Row Hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ------------------------------ Table Actions ------------------------------ */
+td a {
+    color: #2980b9;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td a:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/* ------------------------------ Table Button Styling ------------------------------ */
+table .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #27ae60;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* ------------------------------ Responsive Table ------------------------------ */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------------------------ Table Footer Styling ------------------------------ */
+.table-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.table-footer a {
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.table-footer a:hover {
+    background-color: #3498db;
+}

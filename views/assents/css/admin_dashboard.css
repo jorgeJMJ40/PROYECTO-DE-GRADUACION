@@ -1,0 +1,75 @@
+/* Estilos para el body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Elimina cualquier desbordamiento en el eje X */
+}
+
+/* Sidebar (Barra lateral) */
+#sidebar {
+    min-height: 100vh; /* Altura completa de la pantalla */
+    position: fixed; /* Para que se mantenga siempre visible en la izquierda */
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#sidebar .nav-link {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+#sidebar .nav-link.text-danger:hover {
+    background-color: #dc3545;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 250px; /* Deja espacio para el sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    margin-top: 80px; /* Ajuste según el tamaño del header */
+    overflow-x: hidden; /* Para evitar desbordamientos en el contenido */
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 30px 0;
+    border-bottom: 1px solid #dee2e6;
+    width: 100%; /* Abarca todo el ancho de la pantalla */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Footer fijo */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Abarca todo el ancho de la pantalla */
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+    left: 0; /* Asegura que el footer esté alineado a la izquierda */
+}

@@ -1,0 +1,173 @@
+/* Estilos globales y reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f0f2f5; /* Fondo suave con un leve gradiente */
+    color: #333; /* Texto oscuro */
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más marcada */
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    color: #4e73df; /* Azul impactante */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #4e73df; /* Color azul en foco */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+button {
+    padding: 8px 20px; /* Ajusta el padding para que no sea tan alto */
+    background: linear-gradient(145deg, #4e73df, #2e59d9); /* Gradiente azul */
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #2e59d9, #4e73df); /* Efecto hover invertido */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+button:active {
+    transform: translateY(1px); /* Suaviza el clic */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón secundario */
+.btn-secondary {
+    background-color: #6c757d;
+    border-radius: 25px;
+    color: white;
+    padding: 8px 20px; /* Ajusta el padding para que sea más compacto */
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.btn-secondary:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos */
+i {
+    margin-right: 8px;
+}
+
+/* Espaciado y márgenes */
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mb-4 {
+    margin-bottom: 30px;
+}
+
+.mt-3 {
+    margin-top: 20px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Sombra en el formulario */
+.form-group {
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    input, select {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
